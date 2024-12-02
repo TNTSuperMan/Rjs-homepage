@@ -20,11 +20,11 @@ jobs:
             with:
               node-version: '20'
           
-          - name: Install(&build lib)
+          - name: Install
             run: npm install
           
-          - name: Build homepage
-            run: npm run build:homepage
+          - name: Build
+            run: npm run build
           
           - name: Setup pages
             uses: actions/configure-pages@v5
@@ -32,7 +32,7 @@ jobs:
           - name: Upload
             uses: actions/upload-pages-artifact@v3
             with:
-              path: './homepage/dist'
+              path: 'dist'
           
           - name: Deploy
             id: deployment
