@@ -78,7 +78,7 @@ button{
 /* Play */
 .play{
     display:grid;
-    height:300px;
+    height:min-content;
     margin:10px;
 }
 .play .left{
