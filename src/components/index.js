@@ -1,7 +1,7 @@
 import createNode from "../nodes/index.htm"
 import createWorldCard from "./wordcard"
 import createPlay from "./play"
-import {createProxy, fook} from "../nodes/_"
+import {createProxy, hook} from "../nodes/_"
 export default ()=>{
     let input = {
         name:null,desc:null
@@ -43,10 +43,10 @@ export default ()=>{
     })
     const vnode = createNode(proxy);
     vnode.ondestroy(revoke)
-    fook(()=>{
+    hook(()=>{
         input.name.value = proxy.name;
     })
-    fook(()=>{
+    hook(()=>{
         input.desc.value = proxy.desc;
     })
     return vnode;
