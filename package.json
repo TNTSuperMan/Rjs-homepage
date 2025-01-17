@@ -17,6 +17,6 @@
     "vite-plugin-singlefile": "^2.0.2"
   },
   "dependencies": {
-    "@tntsuperman/rjs": "^0.0.7"
+    "@tntsuperman/rjs": "^0.0.8"
   }
 }
